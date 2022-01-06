@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icarus Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
+        body,html {
+            height: 100%;
+            font-family: "Raleway", sans-serif;
+        }
+        h1,h2,h3,h4,h5,h6,b {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(75, 0, 0);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(100, 0, 0);
+        }
+        .home-bg {
+            height: 100%;
+            background: url("images/car1.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #navbarContainer {
+            transition: .3s;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(window).on("scroll",function(){
+                var height = $(window).scrollTop()
+                if (height>300) {
+                    $("#navbarContainer").addClass("bg-dark")
+                } else {
+                    $("#navbarContainer").removeClass("bg-dark")
+                }
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbarContainer">
+        <div class="container">
+            <a href="#" class="navbar-brand">Icarus</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#models" class="nav-link">Find a car</a></li>
+                    <li class="nav-item"><a href="#order" class="nav-link">Buy a car</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="w3-display-container home-bg">
+        <div class="w3-display-middle rounded p-5 text-white" style="background: rgba(75, 0, 0, 0.9);">
+            <h1 class="fs-3">At Icarus,</h1>
+            <h1 class="fs-1">We go beyond Mobility!</h1>
+            <p>BY YOUR SIDE, WHEREVER THE ROAD TAKES YOU.</p>
+        </div>
+    </div>
+    <div class="container mt-5" id="models">
+        <h3 class="text-center">Models</h3>
+        <hr>
+        <div class="px-4">
+            <div class="row gx-5 gy-5">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/gran_lim.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Icarus 3 Gran Limousine</h4>
+                            <p class="card-text">Starting from Rs. 5,250,000 /-</p>
+                            <p class="form-text">Petrol | Diesel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="order">
+        <h3 class="text-center">Order now</h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <form class="container">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="name_order" placeholder=".">
+                        <label for="name_order">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="email_order" placeholder=".">
+                        <label for="email_order">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="mobile_order" placeholder=".">
+                        <label for="mobile_order">Mobile</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="model_order">
+                            <option>Model X</option>
+                            <option>Model Y</option>
+                            <option>Model Z</option>
+                        </select>
+                        <label for="model_order">Model</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message_order" placeholder="." style="height: 100px;"></textarea>
+                        <label for="message_order">Instructions (if any)</label>
+                    </div>
+                    <button class="btn btn-dark" type="submit">Buy</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/car2.jpg" class="rounded shadow" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="contact">
+        <h3 class="text-center">Contact</h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <form method="post">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="name" placeholder=".">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="email" id="email" placeholder=".">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="regarding">
+                            <option>Sales</option>
+                            <option>Support</option>
+                        </select>
+                        <label for="regarding">Regarding</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="." id="message" style="height: 100px;"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h4>Visit us </h4>
+                <address class="container">
+                    5-98,<br>
+                    Beside Ikea Showroom<br>
+                    Gachibowli, Hyderabad<br>
+                    India - 500019
+                </address>
+                <h4>Email:</h4>
+                <p class="container">
+                    <a href="mailto:info@icarus.com">info@icarus.com</a>
+                </p>
+                <h4>Mobile:</h4>
+                <p class="container">
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid p-5 bg-dark text-white mt-5 shadow">
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="fs-4">Icarus</p>
+                <p class="form-text">&copy; Copyright 2021 Icarus Motors India. All rights reserved.</p>
+            </div>
+            <div class="col-lg-4 form-text">
+                <a href="#">Instagram</a><br>
+                <a href="#">Youtube</a><br>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

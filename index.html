@@ -40,18 +40,25 @@
         #navbarContainer {
             transition: .3s;
         }
+        #models .card {
+            transition: .3s;
+        }
     </style>
     <script>
         $(document).ready(function(){
             $(window).on("scroll",function(){
                 var height = $(window).scrollTop()
                 if (height>300) {
-                    $("#navbarContainer").addClass("bg-dark")
+                    $("#navbarContainer").addClass("bg-dark shadow")
                 } else {
-                    $("#navbarContainer").removeClass("bg-dark")
+                    $("#navbarContainer").removeClass("bg-dark shadow")
                 }
             })
-            
+            $("#models .card").hover(function(){
+                $(this).addClass("bg-dark text-white shadow")
+            }, function() {
+                $(this).removeClass("bg-dark text-white shadow")
+            })
         })
     </script>
 </head>
